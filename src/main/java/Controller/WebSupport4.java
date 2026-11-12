@@ -59,7 +59,7 @@ public final class WebSupport4 {
     public static String home(Member4 member) {
         if (member instanceof Reader4) return "/Reader4/MainMenuReaderUI4.jsp";
         if (member instanceof Manager4) return "/Manager4/MainMenuManagerUI4.jsp";
-        if (member instanceof Librarian4) return "/Librarian4/MainMenuLibrarianUI4.jsp";
+        if (member instanceof Librarian4) return "/Librian4/MainMenuLibrarianUI4.jsp";
         throw new IllegalArgumentException("Unsupported member role.");
     }
 }

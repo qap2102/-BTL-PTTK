@@ -32,7 +32,7 @@ public class AuthenticationFilter4 implements Filter {
         boolean managerRoute = path.startsWith("/Manager4/") || path.equals("/DocumentBorrowingStatServlet4")
                 || path.equals("/DocumentBorrowingReceiptServlet4") || path.equals("/BorrowingReceiptDetailServlet4");
         if ((readerRoute && !(member instanceof Reader4)) || (managerRoute && !(member instanceof Manager4))
-                || (path.startsWith("/Librarian4/") && !(member instanceof Librarian4))) {
+                || (path.startsWith("/Librian4/") && !(member instanceof Librarian4))) {
             response.sendError(HttpServletResponse.SC_FORBIDDEN, "Bạn không có quyền sử dụng chức năng này.");
             return;
         }

@@ -99,8 +99,8 @@ public class Module1FlowTest {
         assertEquals(200, get("/Manager4/MainMenuManagerUI4.jsp").statusCode());
         assertEquals(403, get("/RegistrationServlet4").statusCode());
         post("/logout", Map.of("csrfToken", csrf(get("/Manager4/MainMenuManagerUI4.jsp").body())));
-        assertRedirect(login("user4"), "/Librarian4/MainMenuLibrarianUI4.jsp");
-        assertEquals(200, get("/Librarian4/MainMenuLibrarianUI4.jsp").statusCode());
+        assertRedirect(login("user4"), "/Librian4/MainMenuLibrarianUI4.jsp");
+        assertEquals(200, get("/Librian4/MainMenuLibrarianUI4.jsp").statusCode());
     }
 
     @Test
